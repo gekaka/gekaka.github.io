@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二次元风格の个人简介页面</title>
+    <title>gekaka</title>
+    <script>
+        // 定义要循环显示的标题内容
+        const titles = ["I'm gekaka", "老朽是月批", "孩子想睡觉了"];
+        let index = 0;
+
+        // 每隔2秒更换一次标题
+        setInterval(function() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length; // 保证循环
+        }, 1000); // 1000毫秒 = 1秒
+    </script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
