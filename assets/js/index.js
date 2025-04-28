@@ -11,6 +11,17 @@ let index = 0;
 // 是否滚动
 let rolls = false;
 
+
+// 动态更换网页标题
+const titles = ["I'm gekaka", "老朽是月批", "孩子想睡觉了"];
+let titleIndex = 0;
+
+setInterval(function() {
+    document.title = titles[titleIndex];
+    titleIndex = (titleIndex + 1) % titles.length;
+}, 800);
+
+
 // 窗体改动事件
 const getWindowInfo = () => {
     viewHeight = document.body.clientHeight;
